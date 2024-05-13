@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>News | Art Gallery</title>
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="./images/logo.png">
+		<!-- CSS -->
+		<link rel="stylesheet" href="./styles.css" />
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		<!-- Icon -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<style>
+			main{
+				margin: 2vw 4vw;
+				border: 2px solid var(--primary);
+			}
+			main section{
+				display: flex;
+			}
+			main section div{
+				background-color: var(--assist);
+				margin: 1vw;
+				height: 10vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			main section div:nth-child(1){
+				width: 20vw;
+			}
+			main section div:nth-child(2){
+				width: 60vw;
+			}
+			main section div:nth-child(3){
+				width: 20vw;
+			}
+			main section .news-head{
+				font-size: 1.5vw;
+				font-weight: 500;
+				color: var(--secondary);
+				justify-content: center;
+			}
+			main section div img{
+				width: 3vw;
+				height: 3vw;
+			}
+			main section .news-body:nth-child(2){
+				color: var(--default);
+			}
+			.button{
+				margin: 0;
+				padding: 0.5vw 1.2vw;
+				font-size: 1vw;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav>
+			<a href="./index.html"><img src="images/logo.png"></a>
+			<span class="heading">NEWS & ANNOUNCEMENTS</span>
+			<span class="material-symbols-outlined"><a href="./dashboard.html">account_circle</a></span>
+		</nav>
+		<!-- Hero -->
+		<main>
+			<section>
+				<div class="news-head">Image</div>
+				<div class="news-head">Title</div>
+				<div class="news-head">Action</div>
+			</section>
+			<section>
+				<div class="news-body"><img src="./images/6.jpg"></div>
+				<div class="news-body">New Update is Coming!</div>
+				<div class="news-body"><span class="button"><a href="./news.html">View Details</a></span></div>
+			</section>
+			<section>
+				<div class="news-body"><img src="./images/7.jpg"></div>
+				<div class="news-body">Top Artists this Week!</div>
+				<div class="news-body"><span class="button"><a href="./news.html">View Details</a></span></div>
+			</section>
+		</main>
+	</body>
+</html>

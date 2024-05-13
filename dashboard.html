@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dashboard | Art Gallery</title>
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="./images/logo.png">
+		<!-- CSS -->
+		<link rel="stylesheet" href="./styles.css" />
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		<!-- Icon -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<style>
+			main{
+				display: flex;
+				justify-content: space-evenly;
+			}
+			/* First Section */
+			main #first_sec{
+				width: 30vw;
+			}
+			main #first_sec div{
+				display: flex;
+			}
+			main #first_sec #approval{
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			main #first_sec div div{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			main #first_sec div div img{
+				width: 3vw;
+				height: 3vw;
+				border-radius: 150px;
+			}
+			/* Second Section */
+			main #second_sec{
+				width: 50vw;
+				border: 0.2vw dotted var(--primary);
+			}
+			main #second_sec div{
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+			}
+			main section img{
+				width: 30vw;
+				height: 15vw;
+			}
+			.text{
+				font-size: 1vw;
+				letter-spacing: 0.1vw;
+			}
+			.button{
+				color: var(--secondary);
+				margin: 0;
+				cursor: pointer;
+			}
+			.detail_btn{
+				font-size: 0.7vw;
+				padding: 0.5vw 0.7vw;
+			}
+			.button:not(.detail_btn){
+				color: var(--assist);
+			}
+			.title{
+				text-align: center;
+			}
+			.title input{
+				height: 2vw;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav>
+			<a href="./index.html"><img src="images/logo.png"></a>
+			<span class="heading">DASHBOARD</span>
+			<div>
+				<span class="material-symbols-outlined"><a href="./news.html">notifications_active</a></span>
+				&nbsp &nbsp &nbsp
+				<span class="material-symbols-outlined"><a href="./login.html">logout</a></span>
+			</div>
+		</nav>
+		<!-- Hero -->
+		<main>
+			<section id="first_sec">
+				<p class="title">Community</p>
+				<div>
+					<div style="width: 20vw; height: 7vh;">
+						<img src="./images/7.jpg">
+					</div>
+					<div style="width: 50vw;">
+						<span class="text">Admins</span>
+					</div>
+					<div style="width: 30vw;">
+						<span class="button detail_btn">View Details</span>
+					</div>
+				</div>
+				<div>
+					<div style="width: 20vw; height: 7vh;">
+						<img src="./images/13.jpg">
+					</div>
+					<div style="width: 50vw;">
+						<span class="text">Moderators</span>
+					</div>
+					<div style="width: 30vw;">
+						<span class="button detail_btn">View Details</span>
+					</div>
+				</div>
+				<div>
+					<div style="width: 20vw; height: 7vh;">
+						<img src="./images/14.jpg">
+					</div>
+					<div style="width: 50vw;">
+						<span class="text">Members</span>
+					</div>
+					<div style="width: 30vw;">
+						<span class="button detail_btn">View Details</span>
+					</div>
+				</div>
+				<br>
+				<p class="title">Pending Approvals</p>
+				<div id="approval">
+					<span class="label">9 New Requests</span>
+					<span class="button detail_btn">View Now</span>
+				</div>
+			</section>
+
+			<section id="second_sec" class="shadow">
+				<p class="title">Analytics</p>
+				<div>
+					<p class="button">124 Arts</p>
+					<p class="button">50 Artist</p>
+					<p class="button">578 Users</p>
+				</div>
+				<p class="title">Actions</p>
+				<div>
+					<span class="button">Add New Art</span>
+					<span class="button">Remove an Art</span>
+					<span class="button">More Settings</span>
+				</div>
+				<p class="title">Notifications</p>
+				<form class="title">
+					<input type="text">
+					<button class="button detail_btn" type="submit">Send</button>
+				</form>
+				<br>
+			</section>
+			
+		</main>
+	</body>
+</html>
